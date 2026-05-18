@@ -19,12 +19,12 @@ const members = [
     { id: 17, name: 'Risky Kensen', desc: 'General Affair', photo: 'risky.JPG', badge: 'TKJ' },
     { id: 18, name: 'Selly Susanti', desc: 'Finance Officer & earbook Committee', photo: 'selly.JPG', badge: 'Akuntansi' },
     { id: 19, name: 'Susanto', desc: 'Developer', photo: 'susanto.JPG', badge: 'TKJ' },
-    { id: 20, name: 'Valentina', desc: 'Legacy Committee', photo: 'valentina.jpg', badge: 'Akuntansi' },
-    { id: 21, name: 'Vannessa angelin', desc: 'The Scenography & Yearbook Committee', photo: 'vanessa.jpg', badge: 'Akuntansi' },
-    { id: 22, name: 'Veronica Vernanda.C', desc: 'The Scenography', photo: 'veronica.jpg', badge: 'TKJ' },
-    { id: 23, name: 'Vino Tandra', desc: 'The Scenography', photo: 'vino.jpg', badge: 'TKJ' },
-    { id: 24, name: 'Weliem Lho', desc: 'Project Manager', photo: 'weliem.jpg', badge: 'TKJ' },
-    { id: 25, name: 'Wilson', desc: 'Program Director', photo: 'wilson.jpg', badge: 'TKJ' }
+    { id: 20, name: 'Valentina', desc: 'Legacy Committee', photo: 'valentina.JPG', badge: 'Akuntansi' },
+    { id: 21, name: 'Vannessa angelin', desc: 'The Scenography & Yearbook Committee', photo: 'vanessa.JPG', badge: 'Akuntansi' },
+    { id: 22, name: 'Veronica Vernanda.C', desc: 'The Scenography', photo: 'veronica.JPG', badge: 'TKJ' },
+    { id: 23, name: 'Vino Tandra', desc: 'The Scenography', photo: 'vino.JPG', badge: 'TKJ' },
+    { id: 24, name: 'Weliem Lho', desc: 'Project Manager', photo: 'weliem.JPG', badge: 'TKJ' },
+    { id: 25, name: 'Wilson', desc: 'Program Director', photo: 'wilson.JPG', badge: 'TKJ' }
 ];
 
 // Music variables
