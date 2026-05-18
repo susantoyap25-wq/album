@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Foto | SMK Maitreyawira</title>
+    <meta name="description" content="Digital photo album celebrating the journey of all classes at SMK Maitreyawira">
+    <meta name="keywords" content="TKJ, Akuntansi, Album, Yearbook, 2026">
+    <meta name="author" content="SMK Maitreyawira Class of 2026">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="logo maitreyawira.png1.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="album.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo maitreyawira.png1.ico" alt="" class="logo-img">
+                <a href="index.html" class="nav-logo-text">SMK Maitreyawira</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="" class="nav-link">Bernada</a>
+                <a href="" class="nav-link">TKJ</a>
+                <a href="" class="nav-link">Akuntansi</a>
+                <a href="index.html" class="nav-link active">Album</a>
+            </div>
+            <div class="nav-mode-toggle">
+                <button id="modeToggle" class="mode-toggle-btn" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon" id="modeIcon"></i>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ALBUM SECTION -->
+    <section id="album" class="section album-page">
+        <div class="album-container">
+            <div class="album-header">
+                <h1><i class="fas fa-camera-retro"></i> Album Foto</h1>
+                <p>Kumpulan momen berharga dari semua kelas Angkatan 2026</p>
+            </div>
+
+            <!-- Album Tabs -->
+            <div class="album-tabs">
+                <button class="tab-btn active" data-tab="angkatan">
+                    <i class="fas fa-users"></i> Angkatan Pertama
+                </button>
+                <button class="tab-btn" data-tab="tkj">
+                    <i class="fas fa-laptop-code"></i> TKJ
+                </button>
+                <button class="tab-btn" data-tab="akuntansi">
+                    <i class="fas fa-calculator"></i> Akuntansi
+                </button>
+                <button class="tab-btn" data-tab="momen">
+                    <i class="fas fa-star"></i> Momen
+                </button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchBox" placeholder="Cari foto berdasarkan judul...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="tab-content active" id="tab-angkatan">
+                <div class="photo-grid" id="photoGrid-angkatan">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+                <div class="no-results" id="noResults-angkatan">
+                    <i class="fas fa-image"></i>
+                    <p>Tidak ada foto yang ditemukan</p>
+                </div>
+                <div class="page-info" id="pageInfo-angkatan"></div>
+                <div class="pagination" id="pagination-angkatan"></div>
+            </div>
+
+            <div class="tab-content" id="tab-tkj">
+                <div class="photo-grid" id="photoGrid-tkj">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+                <div class="no-results" id="noResults-tkj">
+                    <i class="fas fa-image"></i>
+                    <p>Tidak ada foto yang ditemukan</p>
+                </div>
+                <div class="page-info" id="pageInfo-tkj"></div>
+                <div class="pagination" id="pagination-tkj"></div>
+            </div>
+
+            <div class="tab-content" id="tab-akuntansi">
+                <div class="photo-grid" id="photoGrid-akuntansi">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+                <div class="no-results" id="noResults-akuntansi">
+                    <i class="fas fa-image"></i>
+                    <p>Tidak ada foto yang ditemukan</p>
+                </div>
+                <div class="page-info" id="pageInfo-akuntansi"></div>
+                <div class="pagination" id="pagination-akuntansi"></div>
+            </div>
+
+            <div class="tab-content" id="tab-momen">
+                <div class="photo-grid" id="photoGrid-momen">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+                <div class="no-results" id="noResults-momen">
+                    <i class="fas fa-image"></i>
+                    <p>Tidak ada foto yang ditemukan</p>
+                </div>
+                <div class="page-info" id="pageInfo-momen"></div>
+                <div class="pagination" id="pagination-momen"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zoom Modal -->
+    <div class="zoom-modal" id="zoomModal">
+        <button class="zoom-nav zoom-prev" id="zoomPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="zoom-nav zoom-next" id="zoomNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="zoom-content">
+            <button class="zoom-close" id="zoomClose"><i class="fas fa-times"></i></button>
+            <div class="zoom-image-wrapper">
+                <img id="zoomImage" src="" alt="Zoom Image">
+            </div>
+            <div class="zoom-controls">
+                <button class="zoom-btn" id="zoomSave" title="Save"><i class="fas fa-download"></i></button>
+            </div>
+            <div class="zoom-info">
+                <h3 id="zoomTitle"></h3>
+                <p id="zoomDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="music-icon" id="musicToggle">
+            <i class="fas fa-play" id="musicIcon"></i>
+        </div>
+        <div>
+            <div class="music-text">Musik</div>
+            <div class="music-status" id="musicStatus">Paused</div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop preload="none">
+        <source src="Banda Neira - Sampai Jadi Debu - Peaceful Piano.mp3" type="audio/mpeg">
+    </audio>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SMK Maitreyawira Dumai</h3>
+                    <p>SMK MAITREYAWIRA KARAKTER PASTI, KETERAMPILAN OKE.</p>
+                    <div class="footer-social">
+                        <a href="https://web.facebook.com/profile.php?id=61556649700739" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/smk_maitreyawira/?utm_source=ig_web_button_share_sheet" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@smkmaitreyawira_dumai" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">TKJ</a></li>
+                        <li><a href="">Akuntansi</a></li>
+                        <li><a href="index.html">Album</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Inpres No 88 Kota Dumai, 28823</li>
+                        <li><i class="fas fa-phone"></i> 081286828000</li>
+                        <li><i class="fas fa-envelope"></i> Smkmaitreyawira8@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMK Maitreyawira Dumai. All Rights Reserved.</p>
+                <p class="chinese-greeting">世界一家</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="album.js" defer></script>
+</body>
+</html>

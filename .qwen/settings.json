@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(findstr *)",
+      "Bash(del *)",
+      "Bash(node *)",
+      "Bash(start *)"
+    ]
+  },
+  "$version": 3
+}

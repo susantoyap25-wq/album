@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Foto TKJ | SMK Maitreyawira</title>
+    <meta name="description" content="Digital photo album celebrating the journey of TKJ Class of 2026">
+    <meta name="keywords" content="TKJ, Computer Network, Yearbook, Class Reunion, 2026">
+    <meta name="author" content="TKJ Class of 2026">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="logo maitreyawira.png1.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo maitreyawira.png1.ico" alt="" class="logo-img">
+                <a href="index.html" class="nav-logo-text">SMK Maitreyawira</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_Beranda/" class="nav-link">Bernada</a>
+                <a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_TKJ/" class="nav-link">TKJ</a>
+                <a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_Akuntansi/" class="nav-link">Akuntansi</a>
+                <a href="index.html" class="nav-link active">Album</a>
+            </div>
+            <div class="nav-mode-toggle">
+                <button id="modeToggle" class="mode-toggle-btn" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon" id="modeIcon"></i>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section">
+        <div class="home-bg" style="background-image: url('foto\ angkatan\ 1\ no\ 2.JPG');"></div>
+        <div class="home-overlay"></div>
+        <div class="home-container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="home-title">
+                        <i class="fas fa-camera-retro"></i>
+                        Selamat Datang di Album Kami
+                    </h1>
+                    <p class="home-description">
+                        Kumpulan momen-momen berharga bersama kelas TKJ Angkatan 2026.
+                        Setiap foto menyimpan cerita, setiap senyum mewakili kenangan,
+                        dan setiap momen adalah bukti persahabatan yang tak terlupakan.
+                    </p>
+                    <p class="home-subtitle">
+                        Dari proses belajar hingga kebersamaan yang penuh tawa,
+                        semua terabadikan dalam album digital ini sebagai kenangan abadi
+                        perjalanan kami di SMK Maitreyawira.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#members" class="btn-explore">
+                            <i class="fas fa-users"></i>
+                            Lihat Member
+                        </a>
+                        <a href="#gallery" class="btn-explore btn-secondary">
+                            <i class="fas fa-images"></i>
+                            Lihat Album
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-stats">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>25</h3>
+                    <p>Members</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-images"></i>
+                    <h3>30+</h3>
+                    <p>Photos</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>1</h3>
+                    <p>Angkatan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMBERS SECTION -->
+    <section id="members" class="section">
+        <div class="members-container">
+            <div class="members-header">
+                <h1><i class="fas fa-user-friends"></i> Our Members</h1>
+                <p>Angkatan 1 - Solid, Kreatif, dan Berprestasi</p>
+            </div>
+
+            <div class="members-grid" id="membersGrid">
+                <!-- Members will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY CTA SECTION -->
+    <section id="gallery" class="section">
+        <div class="gallery-cta-container">
+            <div class="gallery-cta-content">
+                <div class="gallery-cta-icon">
+                    <i class="fas fa-images"></i>
+                </div>
+                <h1 class="gallery-cta-title">
+                    <i class="fas fa-camera-retro"></i>
+                    Jelajahi Album Kami
+                </h1>
+                <p class="gallery-cta-description">
+                    Temukan lebih banyak momen berharga yang telah diabadikan. 
+                    Lihat koleksi lengkap foto-foto kenangan Angkatan 2026 
+                    dalam album digital.
+                </p>
+                <div class="gallery-cta-buttons">
+                    <a href="album.html" class="btn-gallery-primary">
+                        <i class="fas fa-external-link-alt"></i>
+                        Buka Album Lengkap
+                    </a>
+                    <a href="#members" class="btn-gallery-secondary">
+                        <i class="fas fa-arrow-up"></i>
+                        Kembali ke Member
+                    </a>
+                </div>
+                <div class="gallery-preview-badges">
+                    <div class="gallery-badge">
+                        <i class="fas fa-users"></i>
+                        <span>Angkatan Pertama</span>
+                    </div>
+                    <div class="gallery-badge">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>TKJ</span>
+                    </div>
+                    <div class="gallery-badge">
+                        <i class="fas fa-calculator"></i>
+                        <span>Akuntansi</span>
+                    </div>
+                    <div class="gallery-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Momen</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="music-icon" id="musicToggle">
+            <i class="fas fa-play" id="musicIcon"></i>
+        </div>
+        <div>
+            <div class="music-text">Musik</div>
+            <div class="music-status" id="musicStatus">Paused</div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop preload="none">
+        <source src="Always with Me [From Spirited Away] Piano Version (1).mp3" type="audio/mpeg">
+    </audio>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SMK Maitreyawira Dumai</h3>
+                    <p>SMK MAITREYAWIRA KARAKTER PASTI, KETERAMPILAN OKE.</p>
+                    <div class="footer-social">
+                        <a href="https://web.facebook.com/profile.php?id=61556649700739" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/smk_maitreyawira/?utm_source=ig_web_button_share_sheet" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@smkmaitreyawira_dumai" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_Beranda/">Home</a></li>
+                        <li><a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_TKJ/">TKJ</a></li>
+                        <li><a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_Akuntansi/">Akuntansi</a></li>
+                        <li><a href="index.html">Album</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Inpres No 88 Kota Dumai, 28823</li>
+                        <li><i class="fas fa-phone"></i> 081286828000</li>
+                        <li><i class="fas fa-envelope"></i> Smkmaitreyawira8@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMK Maitreyawira Dumai. All Rights Reserved.</p>
+                <p class="chinese-greeting">世界一家</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+
+</body>
+</html>
